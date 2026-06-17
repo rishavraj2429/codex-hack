@@ -1,0 +1,182 @@
+.page { animation: fadeIn 0.3s ease; }
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-4);
+}
+
+.pageTitle {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-1);
+}
+
+.pageSubtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.mapContainer {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  height: calc(100vh - 200px);
+  min-height: 500px;
+}
+
+.controls {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.layerBtn {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  background: var(--color-bg-white);
+  transition: all var(--transition-fast);
+}
+
+.layerBtn:hover {
+  border-color: var(--color-text-light);
+}
+
+.layerBtnActive {
+  background: var(--color-accent-bg);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Zone Detail Panel */
+.detailPanel {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  width: 300px;
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  animation: slideIn 0.2s ease;
+}
+
+.detailClose {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.detailClose:hover {
+  background: var(--color-bg);
+}
+
+.detailTitle {
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-1);
+}
+
+.detailZoneId {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detailLabel {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detailValue {
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+}
+
+.riskBadge {
+  display: inline-flex;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: var(--weight-semibold);
+  margin-top: var(--space-3);
+}
+
+.riskHigh { background: #FEF2F2; color: #DC2626; }
+.riskMedium { background: #FFFBEB; color: #D97706; }
+.riskLow { background: #F0FDF4; color: #15803D; }
+
+/* Legend */
+.legend {
+  position: absolute;
+  bottom: var(--space-4);
+  left: var(--space-4);
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  z-index: 1000;
+  font-size: var(--text-xs);
+}
+
+.legendTitle {
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.legendScale {
+  display: flex;
+  gap: 2px;
+  margin-bottom: var(--space-1);
+}
+
+.legendBlock {
+  width: 24px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legendLabels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  font-size: 10px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-20);
+  color: var(--color-text-muted);
+}

@@ -1,0 +1,124 @@
+.page { animation: fadeIn 0.3s ease; }
+.pageTitle { font-size: var(--text-2xl); font-weight: var(--weight-bold); letter-spacing: -0.02em; margin-bottom: var(--space-1); }
+.pageSubtitle { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-6); }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.card {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.cardTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.recList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.recItem {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  align-items: start;
+  transition: border-color var(--transition-fast);
+}
+
+.recItem:hover {
+  border-color: var(--color-text-light);
+}
+
+.recRank {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--weight-bold);
+  font-size: var(--text-lg);
+  flex-shrink: 0;
+}
+
+.rank1 { background: #FEF3C7; color: #92400E; }
+.rank2 { background: #E0E7FF; color: #3730A3; }
+.rank3 { background: #ECFDF5; color: #065F46; }
+.rankOther { background: var(--color-bg); color: var(--color-text-muted); }
+
+.recBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.recZone {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+}
+
+.recZoneId {
+  font-weight: var(--weight-normal);
+  color: var(--color-text-muted);
+  margin-left: var(--space-1);
+  font-size: var(--text-sm);
+}
+
+.recRationale {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.recMetrics {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.recMetric {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.recMetricValue {
+  font-weight: var(--weight-semibold);
+  color: var(--color-accent);
+}
+
+.recStats {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.recBudget {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-accent);
+}
+
+.recBudgetLabel {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-20);
+  color: var(--color-text-muted);
+}
