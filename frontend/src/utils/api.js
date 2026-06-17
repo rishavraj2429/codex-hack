@@ -1,4 +1,5 @@
-const API_BASE = 'http://localhost:8000/api';
+// const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'https://codex-hack-backend.onrender.com/api';
 
 async function request(endpoint, options = {}) {
   const url = `${API_BASE}${endpoint}`;
